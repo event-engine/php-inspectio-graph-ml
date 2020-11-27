@@ -8,10 +8,10 @@
 
 declare(strict_types=1);
 
-namespace EventEngine\InspectioGraphMl\Exception;
+namespace EventEngine\InspectioGraphMl\Transformator\Exception;
 
-use RuntimeException as BaseRuntimeException;
+use EventEngine\InspectioGraphMl\Exception\InspectioGraphMlException;
 
-class RuntimeException extends BaseRuntimeException implements InspectioGraphMlException
+interface TransformatorException extends InspectioGraphMlException
 {
 }

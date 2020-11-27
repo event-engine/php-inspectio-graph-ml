@@ -8,10 +8,11 @@
 
 declare(strict_types=1);
 
-namespace EventEngine\InspectioGraphMl\Exception;
+namespace EventEngine\InspectioGraphMl\Constraint;
 
-use RuntimeException as BaseRuntimeException;
+use Fhaculty\Graph;
 
-class RuntimeException extends BaseRuntimeException implements InspectioGraphMlException
+interface Constraint
 {
+    public function __invoke(Graph\Vertex $vertex): void;
 }

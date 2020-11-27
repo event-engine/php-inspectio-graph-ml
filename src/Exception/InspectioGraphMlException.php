@@ -10,8 +10,6 @@ declare(strict_types=1);
 
 namespace EventEngine\InspectioGraphMl\Exception;
 
-use RuntimeException as BaseRuntimeException;
-
-class RuntimeException extends BaseRuntimeException implements InspectioGraphMlException
+interface InspectioGraphMlException
 {
 }
